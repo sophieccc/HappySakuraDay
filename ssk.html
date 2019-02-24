@@ -11,7 +11,6 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 
 <script type="text/javascript">
-
 var namMember = new Array(
 
 "short-haired sakura",
@@ -70,7 +69,6 @@ var mid;
 var i;
 
 
-
 //The sequence that you should sort
 
 lstMember[n] = new Array();
@@ -122,8 +120,6 @@ n++;
 }
 
 }
-
-
 
 //Preserve this sequence
 
@@ -415,7 +411,7 @@ str += "<table style=\"width:300px; font-size:20px; line-height:140%; margin-lef
 
 str += "<tr><td style=\"color:#FFFFFF; background-color:#F8AC2E; text-align:center;\">rank<\/td><td style=\"color:#FFFFFF; background-color:#F8AC2E; text-align:center;\">options<\/td><\/tr>";
 
-var insert = "https://twitter.com/intent/tweet?hashtags=HappySakuraDay&text=My%20favourite%20Sakura%20is%20" + namMember[lstMember[0][0]] + "%20!%20%20Find%20out%20yours%20at%20https://sophieccc.github.io/HappySakuraDay/";
+insert = "https://twitter.com/intent/tweet?hashtags=HappySakuraDay&text=My%20favourite%20Sakura%20is%20" + namMember[lstMember[0][0]] + "%20!%20%20Find%20out%20yours%20at%20https://sophieccc.github.io/HappySakuraDay/";
 document.getElementById("link").setAttribute("href",insert);
 for (i=0; i<namMember.length; i++) {
 
@@ -660,7 +656,7 @@ showImage();
 
 <br/>
 <div style="text-align:center">
-<a id="link"><button> Tweet about it! </button></a>
+<a id="link" href="https://twitter.com/intent/tweet?hashtags=HappySakuraDay&text=I%20am%20voting%20for%20my%20favourite%20Sakura!%20Vote%20for%20yours%20at%20https://sophieccc.github.io/HappySakuraDay/"><button> Tweet about it! </button></a>
 </div>
 <br/>
 </body>
