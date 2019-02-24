@@ -31,7 +31,7 @@ h1 {
     color: #ffffff;
     padding: 20px;
     width: 20%;
-    border-radius: 20px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -61,7 +61,7 @@ h1 {
     float: left;
     width: 25%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #D7DBDD;
     text-transform: uppercase;
     font-size: 13px;
