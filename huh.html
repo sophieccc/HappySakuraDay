@@ -3,7 +3,7 @@
 
 <html>
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+<head >
 
 <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 
@@ -12,8 +12,6 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 
 <script type="text/javascript">
-
-<!--
 
 var namMember = new Array(
 
@@ -374,9 +372,9 @@ nrec = 0;
 
 if (cmp1<0) {
 
-str = "battle #"+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
+str = "round #"+(numQuestion-1)+"<br>"+(31-31)+" days till sousenkyo";
 
-document.getElementById("battleNumber").innerHTML = str;
+document.getElementById("roundNumber").innerHTML = str;
 
 
 
@@ -456,7 +454,7 @@ document.getElementById("resultField").innerHTML = str;
 
 function showImage() {
 
-var str0 = "battle #"+numQuestion+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
+var str0 = "round #"+numQuestion+"<br>"+(31-Math.floor((finishSize*100/totalSize)/3))+" days till sousenkyo.";
 
 var str1 = ""+toNameFace(lstMember[cmp1][head1]);
 
@@ -464,7 +462,7 @@ var str2 = ""+toNameFace(lstMember[cmp2][head2]);
 
 
 
-document.getElementById("battleNumber").innerHTML = str0;
+document.getElementById("roundNumber").innerHTML = str0;
 
 document.getElementById("leftField").innerHTML = str1;
 
@@ -625,7 +623,7 @@ font-family: 'Times New Roman', erif;
 
 <tbody><tr>
 
-<td id="battleNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;"><b>battle #1<br>0% sorted.</b></td>
+<td id="roundNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;"><b>round #1<br>0% sorted.</b></td>
 
 </tr>
 
